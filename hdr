@@ -1,0 +1,22 @@
+#################################################################
+# Title:	hdr
+# Function:	Get the media servers for the supplied CM list.
+#
+my $File = "view.pm" ;
+
+sub hdr {
+	my $Proc = "hdr";
+    my $DBG = 1;
+	DebugLevels( "1,2", $Proc );
+	if( LevelCheck( 1, $Proc ) and $DBG )
+		{ ntry( $File, $Proc ); }
+ 
+	my ($str) = @_;	
+ 
+	if( LevelCheck( 1, $Proc ) and $DBG ) {
+		xit( $File, $Proc );
+	}
+} # sub hdr
+
+1; 
+
